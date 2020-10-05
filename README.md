@@ -22,8 +22,8 @@ include 'func.php';
 * [GenerateDeviceID()](#GenDeviceId)
 * [Warna()](#Warna)
 * [RandomName()](#RandomName)
-* [GeneratorUUID()](#GenUUID)
-* [SendMsgTelegram()](#SendMSGTele)
+* [GeneratorUUID()](#GeneratorUUID)
+* [SendMsgTelegram()](#SendMsgTelegram)
 * [GetTemporayMailv1()](#GetTemporaryMailv1)
 * [ViewTemporayMailv1()](#ViewTemporaryMailv1)
 * [GetTemporayGMailv1()](#GetTemporaryGMailv1)
@@ -159,13 +159,6 @@ include 'func.php';
 - `$msg`: A `Your Msg TEXT`
 - `$bottoken`: A `Bottoken Your bot`
 
-### Warna()
-  ```php
-  echo warna($text,'CYAN')
-  ```
-> Return Text with collor
-- `$text`: A `Text string`
-- `CYAN`: A `Collor`
 
 ### GetTemporayMailv1()
   ```php
