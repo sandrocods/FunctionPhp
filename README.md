@@ -10,10 +10,10 @@ include 'func.php';
 ## Function Reference
 * [Curl()](#Curl)
 * [GetVarFromUser()](#GetVarFromUser)
-* [Save](#Save)
-* [Dot Trick](#Dot)
-* [Random](#Random)
-* [Get Between](#GetBetween)
+* [Save()](#Save)
+* [Dot()](#Dot)
+* [Random()](#Random)
+* [Get Between()](#GetBetween)
 * [Get String](#GetStr)
 * [Name Generator](#NameGenerator)
 * [Random Colors](#randomColors)
@@ -45,3 +45,31 @@ include 'func.php';
   $input = GetVarFromUser('Text '); 
   ```
 > Return Text input php
+
+### Save()
+  ```php
+  Save('name_file.txt',$value)
+  ```
+> Save to a file
+
+### Dot()
+  ```php
+  $dot = dot($var);
+  ```
+- `$var`: A `String to dottrick`
+
+### Random()
+  ```php
+  $rand = random($length, $a)
+  ```
+- `$length`: A `length your string`
+- `$a`: A `0 = numeric / 1 = numeric + alphabet`
+
+### Get Between()
+  ```php
+  $get = get_between($string, $start, $end);
+  ```
+- `$string`: A `your string`
+- `$start`: A `prefix your string to search`
+- `$end`: A `suffix your stirng to search`
+
