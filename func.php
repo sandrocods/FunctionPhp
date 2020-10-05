@@ -315,7 +315,6 @@ function send_telegram($chatid, $msg, $bottoken)
          '1',
          null
      );
-     print_r($get_email);
      preg_match('/var gasmurl="\/(.*?)\/(.*?)";/', $get_email[2], $value);
      return array(
         "email" => $value[2].'@'.$value[1],
