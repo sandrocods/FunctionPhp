@@ -13,21 +13,21 @@ include 'func.php';
 * [Save()](#Save)
 * [Dot()](#Dot)
 * [Random()](#Random)
-* [Get Between()](#GetBetween)
-* [Get String](#GetStr)
-* [Name Generator](#NameGenerator)
-* [Random Colors](#randomColors)
-* [Readable Random String](#ReadableRandomString)
-* [Rupiah](#Rupiah)
-* [Generate Device ID](#GenDeviceId)
-* [Warna](#Warna)
-* [Random Name](#RandomName)
-* [Generator UUID](#GenUUID)
-* [Send Msg Telegram](#SendMSGTele)
-* [Get Temporay Mail v1](#GetTemporaryMailv1)
-* [View Temporay Mail v1](#ViewTemporaryMailv1)
-* [Get Temporay GMail v1](#GetTemporaryGMailv1)
-* [View Temporay GMail v1](#GetTemporaryMailv1)
+* [GetBetween()](#GetBetween)
+* [GetString()](#GetStr)
+* [NameGenerator()](#NameGenerator)
+* [RandomColors()](#randomColors)
+* [ReadableRandomString()](#ReadableRandomString)
+* [Rupiah()](#Rupiah)
+* [GenerateDeviceID()](#GenDeviceId)
+* [Warna()](#Warna)
+* [RandomName()](#RandomName)
+* [GeneratorUUID()](#GenUUID)
+* [SendMsgTelegram()](#SendMSGTele)
+* [GetTemporayMailv1()](#GetTemporaryMailv1)
+* [ViewTemporayMailv1()](#ViewTemporaryMailv1)
+* [GetTemporayGMailv1()](#GetTemporaryGMailv1)
+* [ViewTemporayGMailv1()](#GetTemporaryMailv1)
 
 ### Curl()
   ```php
@@ -65,7 +65,7 @@ include 'func.php';
 - `$length`: A `length your string`
 - `$a`: A `0 = numeric / 1 = numeric + alphabet`
 
-### Get Between()
+### GetBetween()
   ```php
   $get = get_between($string, $start, $end);
   ```
@@ -73,3 +73,128 @@ include 'func.php';
 - `$start`: A `prefix your string to search`
 - `$end`: A `suffix your stirng to search`
 
+### getStr()
+  ```php
+  $get = getStr($string, $start, $end)
+  ```
+- `$string`: A `your string`
+- `$start`: A `prefix your string to search`
+- `$end`: A `suffix your stirng to search`
+
+
+### NameGenerator()
+  ```php
+  $name = namegenerator();
+  ```
+> Return String name
+
+
+### RandomColors()
+  ```php
+  $name = RandomColors();
+  ```
+> Return Color to your string
+
+### ReadableRandomString()
+  ```php
+  $read = ReadableRandomString($length);
+  ```
+> Return Readable string
+- `$length`: A `Length string`
+
+### Rupiah()
+  ```php
+  $rupiah = Rupiah($value)
+  ```
+> Return number to rupiah currency
+- `$value`: A `number string`
+
+### ReadableRandomString()
+  ```php
+  $read = ReadableRandomString($length);
+  ```
+> Return Readable string
+- `$length`: A `Length string`
+
+### GenerateDeviceID()
+  ```php
+  $dev = GenerateDeviceID()
+  ```
+> Return Device id 
+
+### Warna()
+  ```php
+  echo warna($text,'CYAN')
+  ```
+> Return Text with collor
+- `$text`: A `Text string`
+- `CYAN`: A `Collor`
+
+### RandomName()
+  ```php
+  echo RandomName();
+  ```
+> Return Random Name From API
+
+### GeneratorUUID()
+  ```php
+  echo GeneratorUUID()
+  ```
+> Return UUID From UUID
+
+### Warna()
+  ```php
+  echo warna($text,'CYAN')
+  ```
+> Return Text with collor
+- `$text`: A `Text string`
+- `CYAN`: A `Collor`
+
+### SendMsgTelegram()
+  ```php
+  $send = send_telegram($chatid, $msg, $bottoken)
+  ```
+> Send Text to telegram
+- `$chatid`: A `Chatid Your Bot`
+- `$msg`: A `Your Msg TEXT`
+- `$bottoken`: A `Bottoken Your bot`
+
+### Warna()
+  ```php
+  echo warna($text,'CYAN')
+  ```
+> Return Text with collor
+- `$text`: A `Text string`
+- `CYAN`: A `Collor`
+
+### GetTemporayMailv1()
+  ```php
+  $get_email = Get_tempm($site)
+  ```
+> Get Email From API Generatoremail & Tempm
+- `$site`: A `1 = generator.email / 2= tempm.com`
+> Return array("email","name","domain","site"); 
+
+### ViewTemporayMailv1()
+  ```php
+  $get = Read_tempm($site , $name, $domain);
+  ```
+> Return Result Generator Email
+- `$site`: A `Get Site Value GetTemporayMailv1() `
+- `$name`: A `Get Return Data from GetTemporayMailv1() `
+- `$domain`: A `Get Return Data from GetTemporayMailv1() `
+
+### GetTemporayGMailv1()
+  ```php
+  $get = gmailnator();
+  ```
+> Return Text with collor
+-   return array('Response','Email','Token');
+
+### ViewTemporayGMailv1()
+  ```php
+  $get = Read_gmailnator($token,$email)
+  ```
+> Return Result Email
+- `$token`: A `Get Token Value GetTemporayGMailv1() `
+- `$email`: A `Get Return Data from GetTemporayGMailv1() `
