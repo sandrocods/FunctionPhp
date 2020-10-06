@@ -142,13 +142,6 @@ include 'func.php';
   ```
 > Return UUID From UUID
 
-### Warna()
-  ```php
-  echo warna($text,'CYAN')
-  ```
-> Return Text with collor
-- `$text`: A `Text string`
-- `CYAN`: A `Collor`
 
 ### SendMsgTelegram()
   ```php
